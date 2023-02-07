@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    display:flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    height:100vh;
+    width:100vw;
+}
+
+
+/******************  NAV STYLING HERE    *****************************/
+
+.nav{
+    height:6vh;
+    width:100%;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    position:sticky;
+    background-color: azure;
+}
+
+.nav ul{
+    display:flex;
+    flex-direction: row;
+
+}
+
+
+.nav ul li{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 0px 60px;
+}
+
+
+
+.nav ul li a{
+    text-decoration: none;
+    
+    margin-right: 10px;
+    padding: 10px;
+}
+
+
+/********************  HEADER STYLING HERE   ******************************/
+
+
+
+
+.header
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+   line-height: 40px;
+     
+}
+
+.header h2
+{
+    font-family:'Roboto Slab';
+    font-weight: 600;
+}
+
+.header h3{
+    font-weight: 400;
+}
+
+/******************  MAIN STYING HERE  **************************/
+
+.select
+{
+   width:500px;
+   text-indent: 10px;
+   padding: 10px;
+   font-size: 1rem;
+   border-color: lightblue;
+   margin-bottom: 10px;
+}
+
+
+main{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    height:100%;
+    width:100vw;
+    margin:30px;
+    padding: 10px;
+}
+
+/****************employees card styling here  ********/
+
+
+.employees_container{
+
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+   
+}
+
+.employees_card
+{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    margin:20px;
+    border:1px solid rgb(199, 191, 191);
+    cursor:pointer;
+}
+
+
+
+.clickedemployees_card{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    margin:20px;
+    cursor:pointer;
+    border:2px solid black;
+   
+
+}
+.img_container{
+    display: flex;
+    justify-content: center;
+    margin:10px;
+}
+
+.info_container{
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+    line-height: 40px;
+    font-size: 14px;
+    
+}
+
+
+/************ TEAM STYLING HERE    *******************/
+
+.team_page{
+    width:100vw;
+    height:50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+   
+}
+
+.team_container
+{
+    max-height: 900px;
+    width:600px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    border:1px solid rgb(23, 22, 22);  
+}
+
+.team_heading{
+    margin:20px;
+    background-color: blue;
+    padding:10px;
+    color:white;
+    position: relative;
+}
+
+
+.teamname_container
+{
+    margin:10px;
+    font-size: 16px; 
+    cursor: pointer;
+    
+}
+
+
+.teamgroups_container
+{
+  
+  padding: 10px;
+  display:flex;
+  flex-direction: column;
+  line-height: 30px;
+  font-size: 16px;
+  transition:  0.50s ease-in;
+  max-height: 900px;
+}
+
+.collapseditem
+{
+  
+    max-height: 0;
+    overflow: hidden;     
+    
+}
+
+
+hr{
+    color:black;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .employees_container{
+        grid-template-columns: 1fr;
+    }
+}
+
